@@ -1,7 +1,6 @@
 # Portfolio Website.
 Web Portfolio to showcase projects and skills in better manner. 
 
-![Image](https://github.com/vinaysomawat/vinaysomawat.github.io/blob/master/vinaysomawatgithubio.gif)
 ### About me
 * Competitive Programming Page
 * Web Designing Page
