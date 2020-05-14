@@ -666,7 +666,7 @@ font-family: "Montserrat", Georgia, serif;}
   position: absolute;
   display: block;
   width: 4px;
-  background: #f9bf3f;
+  background: #4682b4 ;
   top: 20px;
   bottom: 20px;
   margin-left: 29px; }
@@ -715,7 +715,7 @@ font-family: "Montserrat", Georgia, serif;}
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
   position: relative;
-  background: #f9bf3f;
+  background: #4682b4;
   padding: 1.5em;
   margin-left: 60px;
   -webkit-background-clip: padding-box;
