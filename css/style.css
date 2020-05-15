@@ -666,6 +666,7 @@ font-family: "Montserrat", Georgia, serif;}
 .timeline-centered:after {
   clear: both; }
 
+
 .timeline-centered:before {
   content: '';
   position: absolute;
