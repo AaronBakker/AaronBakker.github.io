@@ -10,6 +10,7 @@
       <meta name="author" content="Aaron Bakker" />
       <!--Social Media icons--> 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
       <link rel="icon" type="image/png" href="logo.png">
       <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
@@ -27,6 +28,8 @@
       <link rel="stylesheet" href="css/style.css">
       <!-- Modernizr JS -->
       <script src="js/modernizr-2.6.2.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
        <!-----Google adsense code---->
        <script data-ad-client="ca-pub-4767382980457301" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
    </head>
@@ -39,148 +42,314 @@
             <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
                <div class="text-center">
                   <div class="author-img" style="background-image: url(images/IMG_-wl1xai.jpg);"></div>
-                  <h1 id="colorlib-logo"><a href="https://aaronbakker.github.io">Home</a></h1>
-                  <p><strong>Academic</strong></p>
+                  <h1 id="colorlib-logo"><a href="https://aaronbakker.github.io">Home</></h1>
+                   <p><strong href = "index/resume">Resume</strong></p>
+                   <p><h1><a>Academic</a></h1></p>
+                    <nav id="colorlib-main-menu" role="navigation" class="navbar">
+                        <div id="navbar" class="collapse">
+                            <ul>
+                                <li><a href="#" data-nav-section="projects">Projects</a></li>
+                                <li><a href="#" data-nav-section="publications">Publications</a></li>
+                                <li><a href="#" data-nav-section="presentations">Professional Presentations</a></li>
+                                <li><a href="#" data-nav-section="teaching">Teaching</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                   <p><strong>About</strong></p>
+                   <p><strong>Volunteer</strong></p>
+                   <p><strong>Fun</strong></p>
                </div>
             </aside>
             <!----- main page--------->
             <div id="colorlib-main">
                <!------Projects---------------->
-               <section class="colorlib-skills" data-section="projects">
+               <section class="colorlib-projects" data-section="projects">
                   <div class="colorlib-narrow-content">
                      <div class="row">
                         <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
                            <h1>Projects</h1>
                            <hr>
                         </div>
-                     </div>
-                     <div class="row">
-
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
                            <div class="hovereffect">
-                              <img class="img-responsive" src='images/pollution.jpg' alt="" >
+                              <img class="img-responsive" src='images/pollution.png' alt="" >
                               <div class="overlay">
                                  <h2>Environmental Contamination in Horseshoe Crabs</h2>
-                                 <button id="myBtn1">Content Coming Soon</button> <!-- Trigger/Open The Modal -->
+                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Details</button>
                               </div>
                            </div>
                         </div>
-
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
                            <div class="hovereffect">
-                              <img class="img-responsive" src='images/horseshoecrab1.jpg' alt="" >
+                              <img class="img-responsive" src='images/horseshoecrab.png' alt="" >
                               <div class="overlay">
                                  <h2>Maternal Transfer of Contaminants in Horseshoe Crabs</h2>
-                                 <button id="myBtn2">Content Coming Soon</button> <!-- Trigger/Open The Modal -->
+                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Details</button>
                               </div>
                            </div>
                         </div>
-
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
                            <div class="hovereffect">
-                              <img class="img-responsive" src='images/cichlid.jpg' alt="" >
+                              <img class="img-responsive" src='images/cichlid.png' alt="" >
                               <div class="overlay">
                                  <h2>Mate Choice in Convict Cichlids</h2>
-                                 <button id="myBtn3">Content Coming Soon</button> <!-- Trigger/Open The Modal -->
+                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Details</button>
                               </div>
                            </div>
                         </div>
-
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
                            <div class="hovereffect">
-                              <img class="img-responsive" src='images/cichlid.jpg' alt="" >
+                              <img class="img-responsive" src='images/farmerfish.png' alt="" >
                               <div class="overlay">
-                                 <h2>Mate Choice in Convict Cichlids</h2>
-                                 <button id="myBtn">Content Coming Soon</button> <!-- Trigger/Open The Modal -->
+                                 <h2>Territoriality displays with Damsel Farmerfish</h2>
+                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Details</button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+                           <div class="hovereffect">
+                              <img class="img-responsive" src='images/boston.png' alt="" >
+                              <div class="overlay">
+                                 <h2>Predicting Vegetation Biomass with Demographics for Boston,MA</h2>
+                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">Details</button>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+                           <div class="hovereffect">
+                              <img class="img-responsive" src='images/tree.png' alt="" >
+                              <div class="overlay">
+                                 <h2>Dendrophobia in a Post-Hurricane-Era on Long Island, NY</h2>
+                                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">Details</button>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
-
-                     <div id="myModal1" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                           <span class="close">&times;</span>
-                           <p>Environmental coming soon.</p>
-                        </div>
-                     </div>
-
-
-                     <div id="myModal2" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                           <span class="close">&times;</span>
-                           <p>Maternal description coming soon.</p>
-                        </div>
-                     </div>
-
-
-                     <div id="myModal3" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                           <span class="close">&times;</span>
-                           <p>Mate choice cotent coming soon.</p>
-                        </div>
-                     </div>
-
-
+                  <!-- Modal -->
+                 <div class="modal fade" id="myModal" role="dialog">
+                   <div class="modal-dialog">
+                     <!-- Modal content-->
+                      <div class="modal-content">
+                         <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             <h4 class="modal-title">Accumulation of nonessential trace elements in Atlantic horseshoe crab (<i>Limulus polyphemus</i>) early life stages.</h4>
+                         </div>
+                         <div class="modal-body">
+                             <p><h3><b>Part 1 of Master's Thesis</b></h3></p>
+                             <p><h3>I created, managed, and completed my thesis project on the accumulation of trace elements for early life staged Atlantic horseshoe crabs. My responsibilities included managing technicians, managing grant budgets, data collection, statistical modeling, and manuscript pubications.</h3></p>
+                             <p><h3>Bakker et. al 2016 <strong><a href = "documents/EssentialExposure.pdf"> Click for .pdf</a></strong></h3></p>
+                             <p><h3>Bakker et. al 2017 <strong><a href = "documents/NonessentialExposure.pdf"> Click for .pdf</a></strong></h3></p>
+                         </div>
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                         </div>
+                      </div>
+                   </div>
+                 </div>
+                  <div class="modal fade" id="myModal2" role="dialog">
+                   <div class="modal-dialog">
+                     <!-- Modal content-->
+                      <div class="modal-content">
+                         <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Maternal Transfer of Trace Elements in the Atlantic horseshoe crab</h4>
+                         </div>
+                         <div class="modal-body">
+                           <p><h3><b>Part 2 of Master's Thesis</b></h3></p>
+                             <p><h3>I created, managed, and completed my thesis project on maternal of trace elements for early life staged Atlantic horseshoe crabs. My responsibilities included managing technicians, managing grant budgets, data collection, statistical modeling, and manuscript pubications.</h3></p>
+                             <p><h3>Bakker et. al 2017 <strong><a href = "documents/MaternialTransfer.pdf"> Click for .pdf</a></strong></h3></p>
+                         </div>
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                         </div>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="modal fade" id="myModal3" role="dialog">
+                   <div class="modal-dialog">
+                     <!-- Modal content-->
+                      <div class="modal-content">
+                         <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Mate Choice in Convict Cichlids</h4>
+                         </div>
+                         <div class="modal-body">
+                            <p><h3>In many monogamous species, sexual selection takes place by mate choice, which is usually based on male characteristics. However, the presence of a breeding site also might be equally or more important than male size for substrate brooders. This study investigated the importance of a large mate versus the presence of a breeding site in the monogamous convict cichlid (Amatitlania siquia). If a breeding site is more important than male size, then we predict that females will choose the male with breeding site regardless of his size. To test our hypothesis, males were confined to separate compartments with only one male receiving a breeding site, but females swam freely. In the experimental groups, one male was larger than the other, but both males were equal in size for the control group. Females significantly chose small males with a breeding site more often than large males without a breeding site; therefore, we speculate that the presence of a breeding site is more important than size in convict cichlids.</h3></p>
+                            <p><h3>I was responsible for contributing to creating and testing hypothese, as well as performing statistical tests on data and writing manuscript.</h3></p>
+                         </div>
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                         </div>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="modal fade" id="myModal4" role="dialog">
+                   <div class="modal-dialog">
+                     <!-- Modal content-->
+                      <div class="modal-content">
+                         <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             <h4 class="modal-title">The Role Of Hydrodynamic Movement In Evoking Territorial Displays In The Dusky Farmerfish (<i>Stegastes Nigrican</i>) In An Arabian Sea Atoll</h4>
+                         </div>
+                         <div class="modal-body">
+                             <p><h3>Many animals in nature vigorously defend areas called territories that contain resources like food, shelter and breeding sites.  The herbivorous damselfish (Stegastes nigracans) typically inhabits coral reef and coral-rubble field territories where they farm algae and display stereotypic territorial behaviors (threat displays, chasing, etc.) in response to intruders.   By presenting various visual cues such asshape, colors and/or movements, intruders induce these behaviors.  During January of 2013 in a shallow lagoon off of the coast of Kadmat Island in the Laccadive Archipelago in the Arabian Sea (India), we presented three-dimensional models to territory-holding adult S. nigracans and captured on video resulting agnostic and non-agnostic displays.   Compared to experimental controls which consisted of territory holders that were video recorded in absence of a model intruder, fish that were challenged with intruder models exhibited more stereotypic agnostic behaviors.  We further evaluated the role of hydrodynamic movement in relation to a model‘s ability to evoke a behavior. Agnostic behaviors were grouped into different sub-groups so we could identify different factors. Aggressive behaviors showed a strong correlation with the degree of movement of the model. Other agnostic behaviors declined or showed no change with model movement.   This study clearly indicates that intruder movement, in addition to (static)visual cues contributes to the overall degree of threat posed by intruding fish.</h3></p>
+                             <p><h3>I was responsible for creating and testing developed hypothese, as well as performing statistical tests on data and writing manuscript.</h3></p>
+                         </div>
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                         </div>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="modal fade" id="myModal5" role="dialog">
+                   <div class="modal-dialog">
+                     <!-- Modal content-->
+                      <div class="modal-content">
+                         <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal">&times;</button>
+                         <h4 class="modal-title">Spatially modeling past & present demography to predict tree canopy and biomass for Boston, MA</h4>
+                         </div>
+                         <div class="modal-body">
+                             <p><h3>Modeling and assessing the connection between LiDAR tree canopy and biomass data with census demography and crime data for Boston, MA.</h3></p>
+                             <p><h3>I was responsible for creating and testing developed hypothese, as well as performing statistical analysis and spatial modeling on data. I also trained and managed multiple undergraduate students who collected data.</h3></p>
+                         </div>
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                         </div>
+                      </div>
+                   </div>
+                  </div>
+                  <div class="modal fade" id="myModal6" role="dialog">
+                   <div class="modal-dialog">
+                     <!-- Modal content-->
+                      <div class="modal-content">
+                         <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal">&times;</button>
+                         <h4 class="modal-title">Storm event effect on land use changes from hurricane Sandy on Long Island, NY</h4>
+                         </div>
+                         <div class="modal-body">
+                             <p><h3>In 2012, Hurricane Sandy hit New York impacting home and business owners. Many lost property and personal posesstions from trees falling on personal object. In this study, we investigated if there has been in increase of tree biomass removal using newly developed techniques through timelapsed satelite (Google Maps) imagery.</h3></p>
+                             <p><h3>I was responsible for creating and testing developed hypothese, as well as performing statistical analysis and spatial modeling on data. I also trained and managed multiple undergraduate students who collected data.</h3></p>
+                         </div>
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                         </div>
+                      </div>
+                   </div>
+                  </div>
                </section>
+                <br><br>
                <!------Publications---------------->
-               <section class="colorlib-skills" data-section="skills">
+             <section class="colorlib-publications" data-section="publications">
                   <div class="colorlib-narrow-content">
                      <div class="row">
                         <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                           <!--	<span class="heading-meta">My Specialty</span> -->
                            <h1>Publications</h1>
                            <hr>
                         </div>
                      </div>
                      <div class="row">
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                           <div class="progress-wrap">
-                              <strong>
-                                 <a href="https://www.linkedin.com/in/vinaysomawat/">
-                                    <p style="color:dodgerblue">Linkedin</p>
-                                 </a>
-                              </strong>
+                         <div class="row row-bottom-padded-sm animate-box fadeInLeft animated" data-animate-effect="fadeInRight">
+                            <p><h3>Gagliardi-Seeley J, Bakker A, Burke M, Carlile M &amp; Herrin A. (in revision) Female mate choice in the monogamous convict cichlid (Amatitlania nigrofasciata). Submitted to Journal of Ethology.</h3></p>
+                            <p><h3>Bakker A, Dutton J, Sclafani M &amp; Santangelo N. (2017) Accumulation of nonessential trace elements (Ag, As, Cd, Cr, Hg and Pb) in Atlantic horseshoe crab (Limulus polyphemus) early life stages. Science of the Total Environment. 596-597: 69-78.</h3></p>
+                            <p><h3>Bakker A, Dutton J, Sclafani M &amp; Santangelo N. (2016) Maternal transfer of trace elements in the horseshoe crab (Limulus polyphemus) in Long Island, NY. Ecotoxicology. 26: 46-57.</h3></p>
+                            <p><h3>Bakker A, Dutton J, Sclafani M &amp; Santangelo N. (2016) Environmental exposure of Atlantic horseshoe crab (Limulus polyphemus) early life stages to essential trace elements. Journal of Total Environment. 572: 804-512.</h3></p>
+                        </div>
+                    </div>
+                  </div>
+             </section>
+                <!------Presentations---------------->
+               <section class="colorlib-presentations" data-section="presentations">
+                  <div class="colorlib-narrow-content">
+                     <div class="row">
+                        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                           <h1>Presentations</h1>
+                           <hr>
+                        </div>
+                     </div>
+                     <div class="row">
+                         <div class="row row-bottom-padded-sm animate-box fadeInLeft animated" data-animate-effect="fadeInRight">
+                             <p><h3><b>Invited Talks</b></h3></p>
+                             <p><h3>Hofstra University, Department of Biology, Hempstead, NY, Spring 2016. “How do trace elements accumulate in horseshoe crab (<i>Limulus polyphemus</i>) egg, embryo, and larvae?”</h3></p>
+                            <p><h3>East End Group, Southold, NY, Fall 2015. “The influence of metal pollution on horseshoe crab development and local populations”.</h3></p>
+                            <p><h3>Cornell Cooperative Extension Group, Riverhead, NY, Spring 2015. “Metals, genetics, and horseshoe crabs”.</h3></p>
+                        </div>
+                         <div class="row row-bottom-padded-sm animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                             <p><h3><b>Oral Presentations at Conferences</b></h3></p>
+                             <p><h3><b>Bakker A</b>, Dutton J, Santangelo N. 2016. Metal accumulation in horseshoe crab (<i>Limulus polyphemus</i>) eggs, embryos, and larvae from potentially contaminated public beaches. 7th World Congress of Mountain and Wilderness Medicine. Telluride, CO.</h3></p>
+                             <p><h3>Herrin A, <b>Bakker A</b> &amp; Gagliardi-Seeley J. 2014. Mate Choice in Convict Cichlids (<i>Amatitlania nigrofasciata</i>). MSU Denver 2nd Annual Undergraduate Research Conference. Denver, CO.</h3></p>
+                        </div>
+                         <div class="row row-bottom-padded-sm animate-box fadeInLeft animated" data-animate-effect="fadeInRight">
+                             <p><h3><b>Poster Presentations at Conferences</b></h3></p>
+                             <p><h3>Jennings J, <b>Bakker A</b> &amp; Hancock R. 2014. Model challenge method: An alternative tactic in damselfish behavioral studies. Metropolitan State University of Denver Undergraduate Research Conference. Denver, CO.</h3></p>
+                             <p><h3>Jennings J, <b>Bakker A</b> &amp; Hancock R. 2014. Field studies of visual cues that elicit territorial response behaviors in the damselfish (<i>Pomacentrus albicaudatus</i>). Front Range Student Ecology Symposium, Colorado State University. Ft. Collins, CO.​</h3></p>
+                             <p><h3>Herrin A, Gagliardi-Seeley J, Carlile M, Pluta J, <b>Bakker A</b> &amp; Burke M 2013. Female Choice and Pair Bond Success in the Monogamous, Bi-Parental Convict Cichlid (<i>Amatitlania nigrofasciata</i>). 19th Annual Front Range Student Ecology Symposium. Fort Collins, CO.</h3></p>
+                             <p><h3><b>Bakker, A.</b> &amp; Hancock R. 2013. Evoking territorial displays in the dusky farmerfish (<i>Stegastes nigricans</i>) through model movement. The 50th Annual Conference of the Animal Behavior Society, Boulder, CO.</h3></p>
+                             <p><h3><b>Bakker, A</b> &amp; Hancock, R. 2013. The role of hydrodynamic movement in evoking territorial displays in the dusky farmerfish (<i>Stegastes nigricans</i>) in an Arabian Sea atoll. MSU Denver 2nd Annual Undergraduate Research Conference. Denver, CO.</h3></p>
+                             <p><h3>Quin J, <b>Bakker A</b> &amp; Gagliardi-Seeley J. 2012. Is male mate choice is equally important as female mate choice in the monogamous, bi-parental Convict Cichlid (<i>Amatitlania nigrofasciata</i>)? Meeting of American Society of Ichthyologists and Herpetologists at World Congress of Herpetology, Vancouver, British Columbia.</h3></p>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+                <!------Teaching---------------->
+                <section class="colorlib-teaching" data-section="teaching">
+                  <div class="colorlib-narrow-content">
+                     <div class="row">
+                        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                           <h1>Teaching</h1>
+                           <hr>
+                        </div>
+                     </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                           <div class="timeline-centered">
+                              <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                 <div class="timeline-entry-inner">
+                                    <div class="timeline-icon color-1">
+                                       <i class="fa fa-university"></i>
+                                    </div>
+                                    <div class="timeline-label">
+                                       <h2>Metropolitan State University of Denver</h2>
+                                        <p><strong>Affiliate Professor | August 2016 - May 2017</strong></p>
+                                        <p><a>Bio 1081 - Introductory General Biology II | Times Taught : 2</a></p>
+                                        <p><a>Bio 1081 - Introductory General Biology Lab II | Times Taught : 2</a></p>
+                                        <p><strong>Teaching Assistant | Spring 2014</strong></p>
+                                        <p><a>Bio 4450 - Animal Ecology | Times Taught : 1</a></p>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                 <div class="timeline-entry-inner">
+                                    <div class="timeline-label">
+                                       <h2>Hofstra University</h2>
+                                        <p><strong>Adjunct Professor | January 2015 - May 2016</strong></p>
+                                        <p><a>Bio 012 - Animal Form & Function | Times Taught : 4</a></p>
+                                        <p><strong>Teaching Assistant | Spring 2014</strong></p>
+                                        <p><a>Bio 012 - Animal Form & Function | Times Taught : 4</a></p>
+                                    </div>
+                                 </div>
+                              </article>
                            </div>
                         </div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                           <div class="progress-wrap">
-                              <strong>
-                                 <a href="https://quora.com/profile/Vinay-Somawat">
-                                    <p style="color:darkred">Quora</p>
-                                 </a>
-                              </strong>
-                           </div>
-                        </div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                           <div class="progress-wrap">
-                              <strong>
-                                 <a href="https://medium.com/@vinaysomawat">
-                                    <p style="color:aquamarine">Medium</p>
-                                 </a>
-                              </strong>
-                           </div>
-                        </div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                           <div class="progress-wrap">
-                              <strong>
-                                 <a href="https://www.instagram.com/somawatvinay/">
-                                    <p style="color:darkorange">Instagram</p>
-                                 </a>
-                              </strong>
-                           </div>
-                        </div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                           <div class="progress-wrap">
-                              <strong>
-                                 <a href="https://twitter.com/Vinay_Somawat">
-                                    <p style="color:dodgerblue">Twitter</p>
-                                 </a>
-                              </strong>
-                           </div>
+                      </div>
+                  </div>
+             </section>
+                <!--------Contact---------->
+               <section class="colorlib-contact" data-section="contact">
+                  <div class="colorlib-narrow-content">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="hire">
+                                 <div align=center>
+                                    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+                                    <p style="font-size: 30px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/aaron-bakker166" style="color: white;" class="fa fa-linkedin"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                                       <a href="https://github.com/aaronbakker" style="color: white;" class="fa fa-github"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                       <a href="https://scholar.google.com/citations?hl=en&user=ng-4XxAAAAAJ" style="color: white;" class="fa fa-graduation-cap"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                                    </p>
+                                 </div>
+                                 <p style="text-align: center; margin-bottom: -20px;"><strong>&copy; No Copyrights</strong></p>
+                              </div>
                         </div>
                      </div>
                   </div>
